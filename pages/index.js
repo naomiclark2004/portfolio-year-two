@@ -7,7 +7,7 @@ export default function Home({}) {
 
   useEffect(() => {
     const getProjects = async () => {
-      let res = await fetch("http://localhost:3000/api/projects", {
+      let res = await fetch("https://portfolio-year-two.onrender.com/api/projects", {
         method: "POST",
         header: {
           "Content-Type": "application/json"
