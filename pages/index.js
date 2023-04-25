@@ -36,6 +36,7 @@ export default function Home({}) {
           <h2>Naomi Clark</h2>
           <p>West-Mec Coding Student</p>
           <p>Developer and Designer</p>
+          <p>Skills: HTML5, CSS, SASS, JS, Bootstrap, JQuery, Node.js, Express.js, React.js, React Native, Next.js, MongoDB, PHP, and MySQL.</p>
         </div>
       </div>
 
