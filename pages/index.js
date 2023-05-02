@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { useState, useEffect } from 'react';
 
-export default function Home({}) {
+export default function Home({ }) {
   const [sort, setSort] = useState(-1);
   const [projects, setProjects] = useState([])
 
@@ -30,6 +30,7 @@ export default function Home({}) {
         <Link href="https://github.com/naomiclark2004" target="_blank">Github</Link>
         <Link href="https://west-mec.edu/coding/" target="_blank">Program</Link>
       </div>
+
       <div className='header'>
         <div className="profile"></div>
         <div className="content">
@@ -73,7 +74,13 @@ export default function Home({}) {
                 </Link>
                 <div className='box-content'>
                   <p>{project.name} - {date_f}</p>
-                  <p>{project.description}</p>
+                  <p>{project.description} {(() => {
+                    if (project.collaborator !== undefined) {
+                      return (
+                        <>Collaborator: <Link href={{ pathname: `${project.collablink}` }} target="_blank" className='collab-link'>{project.collaborator}</Link></>
+                      )
+                    }
+                  })()}</p>
                 </div>
               </div>
             )

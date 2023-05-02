@@ -123,6 +123,14 @@ body {
   background-color: white;
 }
 
+.collab-link:active{
+  color: #21273d;
+}
+
+.collab-link:visited{
+  color: #21273d;
+}
+
 .footer {
   height: auto;
   padding: 20px;
