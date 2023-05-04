@@ -36,7 +36,7 @@ body {
 }
 
 .profile {
-  background-image: url('../public/images/profile.jpg');
+  /* background-image: url('../public/images/profile.jpg'); */
   background-size: 155px 160px;
   background-position: center;
   width: 150px;

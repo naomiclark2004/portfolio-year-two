@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { useState, useEffect } from 'react';
-import Head from 'next/head';
+import profile from '../public/images/profile.png';
 
 export default function Home({ }) {
   const [sort, setSort] = useState(-1);
@@ -33,7 +33,7 @@ export default function Home({ }) {
       </div>
 
       <div className='header'>
-        <div className="profile"></div>
+      <img src={profile.src} width="100%" height="100%" className="profile"></img>
         <div className="content">
           <h2>Naomi Clark</h2>
           <p>West-Mec Coding Student</p>
