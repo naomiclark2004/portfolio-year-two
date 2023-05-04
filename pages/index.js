@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { useState, useEffect } from 'react';
+import Head from 'next/head';
 
 export default function Home({ }) {
   const [sort, setSort] = useState(-1);
@@ -85,6 +86,18 @@ export default function Home({ }) {
               </div>
             )
           })}
+      </div>
+      <div className="footer">
+        <p>&copy; Naomi Clark. All Rights Reserved</p>
+        <div className="contact-list">
+          <Link href="mailto: nclark921@west-mec.org">
+            <img src="https://img.icons8.com/material-rounded/24/ffffff/mail.png" width="25px" height="25px" />
+          </Link>
+
+          <Link href="https://github.com/naomiclark2004">
+            <img src="https://img.icons8.com/fluency-systems-filled/48/ffffff/github.png" width="25px" height="25px" />
+          </Link>
+        </div>
       </div>
     </>
   )

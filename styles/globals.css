@@ -1,7 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
 body {
   background-color: #E8E8E8;
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Roboto', sans-serif;
   font-weight: bolder;
   font-size: 15px;
   margin: 0;
@@ -54,12 +55,16 @@ body {
 .header h2 {
   color: #333A56;
   text-align: center;
+  font-size: 2em;
+
 }
 
 .header p {
   color: #333A56;
   text-align: center;
   max-width: 35%;
+  margin: 7.5px;
+  font-size: 20px;
 }
 
 .button {
@@ -144,6 +149,8 @@ body {
 }
 
 .contact-list {
+  display: flex;
+  justify-content: space-around;
   margin: 0 auto;
   width: 100px;
   height: 25px;
