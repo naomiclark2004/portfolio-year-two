@@ -1,4 +1,4 @@
-import clientPromise from "../../lib/mongodb"
+import clientPromise from "../../lib/mongodb";
 
 export default async function handler(req, res) {
   const client = await clientPromise;
@@ -13,10 +13,13 @@ export default async function handler(req, res) {
     //   break;
     case "POST":
       let bodyObject = JSON.parse(req.body);
-      let sort = bodyObject.sort
-      console.log(sort)
-      const projects = await db.collection("projects").find({}).sort({date: sort}).toArray();
-      res.status(200).json(projects)
+      let sort = bodyObject.sort;
+      const projects = await db
+        .collection("projects")
+        .find({})
+        .sort({ date: sort })
+        .toArray();
+      res.status(200).json(projects);
       break;
   }
 }
